@@ -34,10 +34,7 @@ const App = () => {
     setLoading(true);
 
     try {
-      const response = await axios.post('http://127.0.0.1:5000/predict', formData, {
-        headers: {
-          'Content-Type': 'multipart/form-data',
-        },
+      const response = await axios.post('https.historic-audrye-1diegoalonso-c2294400.koyeb.app/predict', formData, {
       });
 
       setPrediction(response.data.prediccion);
